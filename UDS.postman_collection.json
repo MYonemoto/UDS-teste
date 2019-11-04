@@ -1,0 +1,96 @@
+{
+	"info": {
+		"_postman_id": "65442131-b586-425a-ad87-844d63d8ed85",
+		"name": "UDS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create Pizza",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"tamanho\": \"GRANDE\",\n\t\"sabor\": \"PORTUGUESA\",\n\t\"extras\": [\n\t\t\"BORDA_RECHEADA\",\n\t\t\"EXTRA_BACON\"\n\t]\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/pizza/criar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pizza",
+						"criar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Computar Pizza",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"tamanho\": \"GRANDE\",\n\t\"sabor\": \"PORTUGUESA\",\n\t\"extras\": [\n\t\t\"BORDA_RECHEADA\",\n\t\t\"EXTRA_BACON\"\n\t]\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/pizza/calcular",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pizza",
+						"calcular"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Todas Pizzas",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/pizza/getTodasPizza",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pizza",
+						"getTodasPizza"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

@@ -37,7 +37,7 @@ public class PizzaResource {
      * @param pizza
      * @return pizzaModel
      */
-    @PostMapping(produces = MediaType.APPLICATION_JSON_VALUE)
+    @PostMapping(value = "/criar", produces = MediaType.APPLICATION_JSON_VALUE)
     public PizzaModel criarPizza(@Valid @RequestBody PizzaModelIn pizza) {
 
         return pizzaService.salvar(pizza);
