@@ -9,6 +9,7 @@ import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
+import java.util.List;
 
 @RestController
 @RequestMapping("/pizza")
@@ -40,5 +41,14 @@ public class PizzaResource {
     public PizzaModel criarPizza(@Valid @RequestBody PizzaModelIn pizza) {
 
         return pizzaService.salvar(pizza);
+    }
+
+    /**
+     * Endpoint que retorna todas as pizzas do cliente
+     * @return List<PizzaModel>
+     */
+    @GetMapping(value = "/getTodasPizzas", produces = MediaType.APPLICATION_JSON_VALUE)
+    public List<PizzaModel> getTodasPizzas() {
+        return pizzaRepository.findAll();
     }
 }

@@ -4,6 +4,7 @@ package br.com.uds.udsservice.service;
 import br.com.uds.udsservice.models.PizzaModel;
 import br.com.uds.udsservice.models.PizzaModelIn;
 import br.com.uds.udsservice.models.enums.Extra;
+import br.com.uds.udsservice.models.enums.Sabor;
 import br.com.uds.udsservice.repository.PizzaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
