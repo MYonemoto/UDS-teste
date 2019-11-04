@@ -18,7 +18,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"tamanho\": \"GRANDE\",\n\t\"sabor\": \"PORTUGUESA\",\n\t\"extras\": [\n\t\t\"BORDA_RECHEADA\",\n\t\t\"EXTRA_BACON\"\n\t]\n}"
+					"raw": "{\n\t\"tamanho\": \"PEQUENA\",\n\t\"sabor\": \"PORTUGUESA\",\n\t\"extras\": [\n\t\t\"BORDA_RECHEADA\",\n\t\t\"EXTRA_BACON\"\n\t]\n}"
 				},
 				"url": {
 					"raw": "http://localhost:8080/pizza/criar",
@@ -36,7 +36,7 @@
 			"response": []
 		},
 		{
-			"name": "Computar Pizza",
+			"name": "Calcular Pizza",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -77,7 +77,7 @@
 					}
 				],
 				"url": {
-					"raw": "http://localhost:8080/pizza/getTodasPizza",
+					"raw": "http://localhost:8080/pizza/getTodasPizzas",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -85,7 +85,7 @@
 					"port": "8080",
 					"path": [
 						"pizza",
-						"getTodasPizza"
+						"getTodasPizzas"
 					]
 				}
 			},

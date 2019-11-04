@@ -44,7 +44,7 @@ public class PizzaResource {
     }
 
     /**
-     * Endpoint que retorna todas as pizzas do cliente
+     * Endpoint que retorna todas as pizzas
      * @return List<PizzaModel>
      */
     @GetMapping(value = "/getTodasPizzas", produces = MediaType.APPLICATION_JSON_VALUE)
